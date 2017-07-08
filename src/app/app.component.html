@@ -2,9 +2,14 @@
   <h1>
     {{title}}
   </h1>
-  <!-- TODO: Hacer botoncito para mostrar el componente -->
-  <button onclick="encuesta.myFunction(); isEncuestaVisible=true;"></button>
-  
-  <encuesta-root #encuesta [isVisible]="isEncuestaVisible"></encuesta-root>
-  
+  <div *ngIf="showSexLogin">
+    <h2>Ingrese seleccionando su sexo y presionando el boton "ENTRAR"</h2>
+    <select>
+      <option></option>
+      <option value="H">HOMBRE</option>
+      <option value="M">MUJER</option>
+    </select>
+    <button (click)="login()">ENTRAR</button>
+  </div>
 </div>
+
