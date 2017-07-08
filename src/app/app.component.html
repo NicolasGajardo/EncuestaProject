@@ -5,11 +5,20 @@
   <div *ngIf="showSexLogin">
     <h2>Ingrese seleccionando su sexo y presionando el boton "ENTRAR"</h2>
     <select>
-      <option></option>
+      <option value=""></option>
       <option value="H">HOMBRE</option>
       <option value="M">MUJER</option>
     </select>
     <button (click)="login()">ENTRAR</button>
+  </div>
+  <div *ngIf="showChooseEncuesta">
+    <h2>¿Qué medio de transporte público utiliza mayormente?</h2>
+    <select>
+      <option value=""></option>
+      <option>METRO</option>
+      <option>BUS URBANO</option>
+    </select>
+    <button (click)="selectedPublicTransport()">SELECCIONAR</button>
   </div>
 </div>
 
