@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #E6E6E6; 
+}
+._tonteraDeArriba {
+  position: fixed;
+  top: 15px;
+  width: 170px;
+  height: 10px;
+  z-index: -1;
+}
+
+._tonteraDeArriba ._topAzul {
+  float: left;
+  background-color: #0068B7;
+  width: 40%;
+  height: inherit;
+}
+
+._tonteraDeArriba ._topRojo {
+  float: left;
+  background-color: #E93B45;
+  width: 60%;
+  height: inherit;
+}
